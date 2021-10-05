@@ -47,11 +47,6 @@ const Contact = () => {
                     value=""
                   />
                 </div>
-                <div className=" p-2">
-                  <button type="button" class="btn btn-primary">
-                    Submit
-                  </button>
-                </div>
               </div>
               <div className="col-md-6">
                 <div className=" p-2">
@@ -60,6 +55,11 @@ const Contact = () => {
                     className="form-control message"
                     placeholder="Your Message *"
                   ></textarea>
+                </div>
+                <div className=" p-2">
+                  <button type="button" class="btn btn-primary px-5 py-2">
+                    Submit
+                  </button>
                 </div>
               </div>
             </div>

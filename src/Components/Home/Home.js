@@ -42,8 +42,23 @@ const Home = () => {
       </div>
       <div className="home-intro  ">
         <h1 className="text-warning text-center">Our Popular Services</h1>
-        <div className="popular course-container">
-          {popular.map((p) => (
+
+        <div>
+          <div className="row row-cols-2 row-cols-md-3 g-4">
+            {popular.map((p) => (
+              <div className="col">
+                <div className=" course bg-dark h-100">
+                  <img src={p.img} alt="" className="img-fluid" /> <br />
+                  <h5 className="text-light ">{p.name}</h5>
+                  <p className="text-light">{p.description}</p>
+                  <button className="d-block mx-auto btn btn-danger px-3">
+                    Purchase: ${p.price}
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+          {/* {popular.map((p) => (
             <div className="course bg-dark">
               <img src={p.img} alt="" className="img-fluid" /> <br />
               <h5 className="text-light ">{p.name}</h5>
@@ -52,7 +67,7 @@ const Home = () => {
                 Purchase: ${p.price}
               </button>
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
     </div>

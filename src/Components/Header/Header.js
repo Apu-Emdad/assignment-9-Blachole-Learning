@@ -18,10 +18,10 @@ const Header = () => {
         Services
       </NavLink>
       <NavLink className="item" activeStyle={activeStyle} to="/about">
-        about
+        About
       </NavLink>
       <NavLink className="item" activeStyle={activeStyle} to="/contact">
-        contact
+        Contact Us
       </NavLink>
     </Container>
   );
