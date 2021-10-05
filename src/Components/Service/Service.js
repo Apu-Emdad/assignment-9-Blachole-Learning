@@ -9,7 +9,7 @@ const Service = (props) => {
       <img src={img} alt="" className="img-fluid" /> <br />
       <h5 className="text-light ">{name}</h5>
       <p>{description}</p>
-      <button className="mx-auto btn btn-danger px-3">
+      <button className="d-block mx-auto btn btn-danger px-3">
         Purchase: ${price}
       </button>
     </div>
